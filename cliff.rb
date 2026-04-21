@@ -5,21 +5,21 @@
 class Cliff < Formula
   desc "A terminal-native directory for CLIs and TUIs"
   homepage "https://cliff.sh"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.5/cliff_0.1.5_darwin_amd64.tar.gz"
-      sha256 "804adbfec28714b042a8d4365fc0ed7d80228afda4abe108590745d0a71df105"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.6/cliff_0.1.6_darwin_amd64.tar.gz"
+      sha256 "4fe52f8e3976eb39d88c770a387bb63b6ed735fa9cebe94ab438492904734920"
 
       define_method(:install) do
         bin.install "cliff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.5/cliff_0.1.5_darwin_arm64.tar.gz"
-      sha256 "be0ab5601e18dc3a5d9e45119943f0a9afb6a79fc0665ee195a20a851ded31df"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.6/cliff_0.1.6_darwin_arm64.tar.gz"
+      sha256 "ceb3236a3bb2bcfea9a9408da6682f9a122657cc3c6c489cd9feb861cfebeb15"
 
       define_method(:install) do
         bin.install "cliff"
@@ -29,15 +29,15 @@ class Cliff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.5/cliff_0.1.5_linux_amd64.tar.gz"
-      sha256 "6ec639ddffb762bdcf29bd1bd29dc54d4114b6cea7d4587437db616d736e4c5b"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.6/cliff_0.1.6_linux_amd64.tar.gz"
+      sha256 "20a4337018f898eb8eea15194153b4fb746b6211f70c47d3a1c3f29fd3e41f9b"
       define_method(:install) do
         bin.install "cliff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.5/cliff_0.1.5_linux_arm64.tar.gz"
-      sha256 "c5f753ee5f78254d018c66d832aed4f74f683c8d62d77d7878b9d2d2d4ec72de"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.6/cliff_0.1.6_linux_arm64.tar.gz"
+      sha256 "dfa35b28b427e5bbbe0ff0c7d9509703970820ffffa0d16c94b211079edb8e46"
       define_method(:install) do
         bin.install "cliff"
       end
