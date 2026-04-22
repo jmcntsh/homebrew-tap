@@ -5,21 +5,21 @@
 class Cliff < Formula
   desc "A terminal-native directory for CLIs and TUIs"
   homepage "https://cliff.sh"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.11/cliff_0.1.11_darwin_amd64.tar.gz"
-      sha256 "82690c5b3f454b8b81bf5453b8b9e719d825e0e1591ae515bbb1f37b3b5d3439"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.12/cliff_0.1.12_darwin_amd64.tar.gz"
+      sha256 "e9b21d595da023e176863fd968d7383ab8f51275d3a55e572a5c6b32aafe2e1a"
 
       define_method(:install) do
         bin.install "cliff"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.11/cliff_0.1.11_darwin_arm64.tar.gz"
-      sha256 "7ec92476eb701432e2934b274f4c752006efc74ec03553821a685677750e79ea"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.12/cliff_0.1.12_darwin_arm64.tar.gz"
+      sha256 "bbcea792604ff388e96a9312b212b71cbd13174e87afcf3f1ddb1be3832d4c61"
 
       define_method(:install) do
         bin.install "cliff"
@@ -29,15 +29,15 @@ class Cliff < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.11/cliff_0.1.11_linux_amd64.tar.gz"
-      sha256 "0d86b214c53f7dca6204329ca4538d5b3567fa644babb1005736fb6c2d6f5ff5"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.12/cliff_0.1.12_linux_amd64.tar.gz"
+      sha256 "4b58890a35e95de7fdb0eb70c5a61c9eaf686e357433e3101d77b6f71f2dc512"
       define_method(:install) do
         bin.install "cliff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.11/cliff_0.1.11_linux_arm64.tar.gz"
-      sha256 "50de83df385dea0c95626b5c6aa93aa90fcf0e6f022bc99ea29dc3f5f3541e38"
+      url "https://github.com/jmcntsh/cliff/releases/download/v0.1.12/cliff_0.1.12_linux_arm64.tar.gz"
+      sha256 "90e8e28eca718b8b68ac378ae94aa142017a41379568278216141739a0583001"
       define_method(:install) do
         bin.install "cliff"
       end
